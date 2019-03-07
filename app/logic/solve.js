@@ -1,11 +1,10 @@
  'use strict'
 
-const fs = require('fs')
-
 module.exports = (puzzle) => {
     return {
         check,
-        findAnswer
+        findAnswer,
+        updatePuzzle
     }
     // Checks if the word is the correct pangram
     function check(word) {
@@ -21,5 +20,9 @@ module.exports = (puzzle) => {
 
             return true
         })
+    }
+
+    function updatePuzzle(newPuzzle) {
+        return puzzle = newPuzzle
     }
 }

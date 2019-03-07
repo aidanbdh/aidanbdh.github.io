@@ -8,7 +8,8 @@
     "filter": "node filter.js",
     "answer": "node ./app/command-line/answer-ci.js",
     "find-answer": "node ./app/command-line/find-ci.js",
-    "test": "node ./app/command-line/test-ci.js"
+    "test": "node ./app/command-line/test-ci.js",
+    "bundle": "browserify app/public/index.js -o app/public/main.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/aidanbdh/spelling-bee-generator#readme",
   "dependencies": {
+    "browserify": "^16.2.3",
     "prompt": "^1.0.0",
     "shuffle-words": "^0.1.2",
     "word-list": "^2.0.0"

@@ -1,0 +1,11 @@
+#puzzle {
+    white-space: pre-wrap;
+}
+
+.container {
+    margin-bottom: 30px;
+}
+
+.hidden {
+    display: none;
+}

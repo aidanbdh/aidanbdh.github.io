@@ -1,2 +1,4 @@
 node_modules
-api-keys.json
+.DS_Store
+puzzle.json
+answers.txt

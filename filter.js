@@ -26,9 +26,9 @@ const filteredArray = wordArray.filter(word => {
     return num === 7 ? true : false
 })
 
-fs.writeFileSync('./valid-words-hard.txt', JSON.stringify(filteredArray))
+fs.writeFileSync('./valid-words-hard.json', JSON.stringify(filteredArray))
 
-const easyList = JSON.parse(fs.readFileSync('./valid-words.txt', 'utf8'))
+const easyList = require('./valid-words.json')
 
 const filteredList = easyList.filter(word => {
     if(word.length < 8)
@@ -52,4 +52,4 @@ const filteredList = easyList.filter(word => {
     return num === 7 ? true : false
 })
 
-fs.writeFileSync('./valid-words.txt', JSON.stringify(filteredList))
+fs.writeFileSync('./valid-words.json', JSON.stringify(filteredList))
