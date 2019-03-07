@@ -24,7 +24,7 @@ $checkAnswer.addEventListener('click', () => {
     const text = $answerInput.value
 
     if(scripts.check(text))
-        $results.textContent = 'That is the pangram! Congradulations!'
+        $results.textContent = 'That is the pangram! Congratulations!'
     else
         $results.textContent = 'That is not the pangram, try again.'
 
