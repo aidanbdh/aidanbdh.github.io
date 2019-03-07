@@ -64,9 +64,7 @@ window.mobilecheck = function () {
 if(window.outerWidth < 960 || window.mobilecheck()) {
     $body.classList.add('mobile-text')
 
-    console.log($buttons)
     for(let i = 0; i < $buttons.length; i++) {
-        console.log($buttons[i])
         $buttons[i].classList.add('mobile')
     }
 
