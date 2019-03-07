@@ -1,9 +1,8 @@
 'use strict'
 
-const fs = require('fs')
 const shuffleWords = require('shuffle-words')
 
-const words = JSON.parse(fs.readFileSync('./valid-words.txt'))
+const words = require('../../valid-words.json')
 
 module.exports = () => {
     const random = Math.floor(Math.random() * words.length - 1)
@@ -13,7 +12,7 @@ module.exports = () => {
         .filter((el, i) => words[random].indexOf(el) === i ? true : false)
         .join('')
 
-    fs.writeFileSync('./answers.txt', words[random])
+    // fs.writeFileSync('./answers.txt', words[random])
 
     let output = shuffleWords(word, true).toUpperCase()
 
