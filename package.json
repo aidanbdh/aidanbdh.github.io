@@ -4,11 +4,11 @@
   "description": "A program for generating a random spelling bee word puzzle.",
   "main": "index.js",
   "scripts": {
-    "start": "node generate.js",
+    "start": "node ./app/command-line/generate-ci.js",
     "filter": "node filter.js",
-    "answer": "more answers.txt",
-    "find-answer": "node answer.js",
-    "test": "node test.js"
+    "answer": "node ./app/command-line/answer-ci.js",
+    "find-answer": "node ./app/command-line/find-ci.js",
+    "test": "node ./app/command-line/test-ci.js"
   },
   "repository": {
     "type": "git",
