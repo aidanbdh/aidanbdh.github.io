@@ -8,7 +8,7 @@ module.exports = (puzzle) => {
     }
     // Checks if the word is the correct pangram
     function check(word) {
-        return word === puzzle.answer
+        return word.toUpperCase() === puzzle.answer.toUpperCase()
     }
     // Returns an array of possible answers to the pangram.
     function findAnswer() {
