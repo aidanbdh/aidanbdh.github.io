@@ -33,6 +33,6 @@ console.log('Difficulty: ' + (Number.parseInt(('' + random)[0]) + 1) + '\n')
 
 
 function checkLetter(letter) {
-    const banList = 'xsz'
-    return banList.indexOf(letter.toLowerCase()) === -1
+    const banList = 'xszjwq'
+    return banList.indexOf(letter.toUpperCase()) === -1
 }
