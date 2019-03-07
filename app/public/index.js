@@ -61,7 +61,7 @@ window.mobilecheck = function () {
     return check
 }
 
-if(window.outerWidth < 960 || window.mobilecheck) {
+if(window.outerWidth < 960 || window.mobilecheck()) {
     $body.classList.add('mobile')
 
     console.log($buttons)

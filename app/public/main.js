@@ -43,7 +43,7 @@ module.exports = (puzzle) => {
     }
     // Checks if the word is the correct pangram
     function check(word) {
-        return word === puzzle.answer
+        return word.toUpperCase() === puzzle.answer.toUpperCase()
     }
     // Returns an array of possible answers to the pangram.
     function findAnswer() {
@@ -126,7 +126,7 @@ window.mobilecheck = function () {
     return check
 }
 
-if(window.outerWidth < 960 || window.mobilecheck) {
+if(window.outerWidth < 960 || window.mobilecheck()) {
     $body.classList.add('mobile')
 
     console.log($buttons)
